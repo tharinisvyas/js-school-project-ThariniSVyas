@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memory Constellation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header role="banner">
+    <h1>🌌 Memory Constellation</h1>
+    <nav aria-label="Theme controls">
+      <button aria-label="Toggle dark/light mode" onclick="toggleTheme()">Toggle Theme 🌓</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="timeline" aria-label="Memory Timeline">
+      <article tabindex="0">
+        <h2>Getting into My Dream College <small>(July 2023)</small></h2>
+        <figure>
+          <img src="/Users/tharinivyas/Documents/My photo/WhatsApp Image 2025-01-12 at 15.52.40.jpeg"
+               alt="Manipal Institute of Technology, Bengaluru" />
+          <figcaption>The moment my dream became a reality — MIT Bengaluru.</figcaption>
+        </figure>
+        <p>
+          The day I received my offer from Manipal Institute of Technology, Bengaluru was unforgettable.
+          It felt like years of effort, ambition, and late-night prayers had finally paid off.
+          I remember my heart racing as I read the email — I was officially going to my dream college.
+          That moment sparked a wave of excitement, gratitude, and belief that anything is possible.
+        </p>
+      </article>
+
+      <article tabindex="0">
+        <h2>From Family Bonds to Frozen Frontiers <small>(April 2025)</small></h2>
+        <figure>
+          <img src="/Users/tharinivyas/Downloads/IMG_2726.jpg"
+               alt="Image of Nathula Pass" />
+          <figcaption>Snowy trails, shared stories, and sacred silence.</figcaption>
+        </figure>
+        <p>
+          Our family trip to Sikkim took a powerful turn as we reached Nathula Pass and Baba Harbhajan Singh Mandir.
+          Hearing the story of the brave soldier who continues to guard the borders even after death gave me goosebumps.
+          Surrounded by snow and stillness, I felt a strange mix of pride, calm, and awe — something I’ll never forget.
+        </p>
+      </article>
+    </section>
+
+    <section id="modal" aria-hidden="true" role="dialog" aria-label="Memory Details Modal">
+      <!-- Modal content placeholder -->
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Memory Constellation</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      document.body.classList.toggle("dark-theme");
+    }
+  </script>
+</body>
+</html>

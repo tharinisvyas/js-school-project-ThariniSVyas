@@ -1,0 +1,144 @@
+body {
+  background: radial-gradient(circle at top, #0d0d2b, #000) fixed;
+  color: white;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s, background 0.3s;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(5px);
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+  text-align: center;
+  flex: 1;
+}
+
+header nav button {
+  background: linear-gradient(45deg, #4b6cb7, #182848);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+  flex-shrink: 0;
+}
+
+header nav button:hover {
+  background: linear-gradient(45deg, #6b8dd6, #243b55);
+}
+
+#timeline {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+article {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+  transition: transform 0.2s, box-shadow 0.3s;
+  backdrop-filter: blur(5px);
+}
+
+article:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.15);
+}
+
+article h2 {
+  margin-top: 0;
+  font-size: 1.3rem;
+}
+
+article figure {
+  margin: 0;
+  text-align: center;
+}
+
+article img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+article figcaption {
+  font-style: italic;
+  font-size: 0.9rem;
+  margin-top: 0.5rem;
+  color: #ccc;
+}
+
+article p {
+  text-align: justify;
+}
+
+#modal {
+  display: none;
+}
+
+footer {
+  background: rgba(0, 0, 0, 0.7);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  backdrop-filter: blur(5px);
+}
+
+.dark-theme {
+  background: radial-gradient(circle at top, #464449, #272758) fixed;
+  color: white;
+}
+
+.dark-theme article {
+  background: rgba(184, 176, 251, 0.07);
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  #timeline {
+    padding: 1rem;
+    gap: 1.5rem;
+  }
+
+  article {
+    padding: 0.8rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.3rem;
+  }
+
+  article h2 {
+    font-size: 1.1rem;
+  }
+}
