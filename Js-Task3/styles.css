@@ -1,0 +1,121 @@
+body {
+  background: radial-gradient(circle at top, #0d0d2b, #000) fixed;
+  color: white;
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  transition: background-color 0.3s, color 0.3s, background 0.3s;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+header nav button {
+  background: linear-gradient(45deg, #4b6cb7, #182848);
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+#timeline {
+  padding: 2rem;
+}
+
+.year-block {
+  margin-bottom: 2rem;
+}
+
+.year-block h2 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  padding-bottom: 0.5rem;
+}
+
+.event-card {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1rem;
+  border-radius: 12px;
+  display: inline-block;
+  margin: 0.5rem;
+  width: 250px;
+  vertical-align: top;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.event-card:hover {
+  transform: scale(1.05);
+}
+
+.event-card img {
+  max-width: 100%;
+  border-radius: 6px;
+}
+
+/* Modal Overlay */
+/* Modal Overlay - Perfectly Centered */
+#modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+.modal-content {
+  background: #111;
+  padding: 1rem;
+  border-radius: 10px;
+  max-width: 500px;
+  max-height: 90vh;
+  text-align: center;
+  overflow-y: auto;
+  animation: scaleUp 0.3s ease-in-out;
+}
+
+.modal-content img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+/* Dark Theme */
+.dark-theme {
+  background: radial-gradient(circle at top, #464449, #272758) fixed;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { background: rgba(0,0,0,0); }
+  to { background: rgba(0,0,0,0.8); }
+}
+
+@keyframes scaleUp {
+  from { transform: scale(0.85); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}

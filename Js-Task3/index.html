@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memory Constellation</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header role="banner">
+    <h1>🌌 Memory Constellation</h1>
+    <nav aria-label="Theme controls">
+      <button aria-label="Toggle dark/light mode" onclick="toggleTheme()">Toggle Theme 🌓</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="timeline" aria-label="Memory Timeline">
+      <!-- Events will be loaded here by JS -->
+    </section>
+
+    <section id="modal" aria-hidden="true" role="dialog" aria-label="Memory Details Modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2 id="modal-title"></h2>
+        <img id="modal-image" src="" alt="Memory Image" />
+        <p id="modal-description"></p>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; 2025 Memory Constellation</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

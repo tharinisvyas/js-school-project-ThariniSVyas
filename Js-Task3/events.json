@@ -1,0 +1,23 @@
+{
+  "2023": [
+    {
+      "title": "Getting into My Dream College",
+      "description": "The day I got into MIT Bengaluru was unforgettable. Years of effort, ambition, and late-night prayers had finally paid off.",
+      "imageURL": "images/dream_college.jpeg"
+    }
+  ],
+  "2024": [
+    {
+      "title": "Trip to Pondi",
+      "description": "Pondi with my gang. Most memorable experience.",
+      "imageURL": "images/pondi_trip.jpeg"
+    }
+  ],
+  "2025": [
+    {
+      "title": "Family Trip to Sikkim",
+      "description": "Snowy trails, shared stories and crazy exploration",
+      "imageURL": "images/sikkim_trip.jpeg"
+    }
+  ]
+}
