@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memory Constellation</title>
+</head>
+
+<body style="background-color: white; color: black; font-family: sans-serif; transition: background-color 0.3s, color 0.3s;">
+  <header role="banner">
+    <h1>🌌 Memory Constellation</h1>
+    <nav aria-label="Theme controls">
+      <button aria-label="Toggle dark/light mode" onclick="toggleTheme()">Toggle Theme 🌓</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="timeline" aria-label="Memory Timeline">
+      <article tabindex="0">
+        <h2>Getting into My Dream College</h2>
+        <time datetime="2023-07">July 2023</time>
+        <figure>
+          <img 
+            src="/Users/tharinivyas/Documents/My photo/WhatsApp Image 2025-01-12 at 15.52.40.jpeg" 
+            alt="Manipal Institute of Technology, Bengaluru" 
+            style="max-width: 50%; height: auto; display: block; margin-bottom: 10px;" />
+          <figcaption>The moment my dream became a reality — MIT Bengaluru.</figcaption>
+        </figure>
+        <p style="text-align: justify;">
+                The day I received my offer from Manipal Institute of Technology, Bengaluru was unforgettable.<br>
+                It felt like years of effort, ambition, and late-night prayers had finally paid off.<br>
+                I remember my heart racing as I read the email — I was officially going to my dream college.<br>
+                That moment sparked a wave of excitement, gratitude, and belief that anything is possible.<br>
+        </p>
+      </article>
+
+      <article tabindex="0">
+        <h2>From Family Bonds to Frozen Frontiers</h2>
+        <time datetime="2025-04">April 2025</time>
+        <figure>
+          <img 
+            src="/Users/tharinivyas/Downloads/IMG_2726.jpg" 
+            alt="Image of Nathula Pass" 
+            style="max-width: 50%; height: auto; display: block; margin-bottom: 10px;" />
+          <figcaption>Snowy trails, shared stories, and sacred silence.</figcaption>
+        </figure>
+        <p style="text-align: justify;">
+                Our family trip to Sikkim took a powerful turn as we reached Nathula Pass and Baba Harbhajan Singh Mandir.<br>
+                Hearing the story of the brave soldier who continues to guard the borders even after death gave me goosebumps.<br>
+                Surrounded by snow and stillness, I felt a strange mix of pride, calm, and awe — something I’ll never forget.<br>
+        </p>
+      </article>
+    </section>
+
+    <section id="modal" aria-hidden="true" role="dialog" aria-label="Memory Details Modal">
+      <!-- Modal content placeholder -->
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <p>&copy; My Memory Constellation</p>
+  </footer>
+
+  <script>
+    function toggleTheme() {
+      const body = document.body;
+      const isDark = body.style.backgroundColor === 'black';
+      body.style.backgroundColor = isDark ? 'white' : 'black';
+      body.style.color = isDark ? 'black' : 'white';
+    }
+  </script>
+</body>
+</html>
